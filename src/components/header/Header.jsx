@@ -48,8 +48,7 @@ const Header = () => {
                 <div className="logo">
                     <img src={logo} alt="" />
                     <Link to="/">
-                      <p style={{ textAlign: 'center', fontSize: '16px' }}>"Create By Nguyễn Kim Khôi (nguyenkimkhoi2709@gmail.com)"</p>
-                      tMovies
+                      <p style={{ textAlign: 'center', fontSize: '16px' }}>"Create By (nguyenkimkhoi2709@gmail.com)"</p>
                     </Link>
                 </div>
                 <ul className="header__nav">
