@@ -1,17 +1,11 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-
-import './movie-list.scss';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
 import tmdbApi, { category } from '../../api/tmdbApi';
-
+import './movie-list.scss';
 import MovieCard from '../movie-card/MovieCard';
 
 const MovieList = props => {
-
     const [items, setItems] = useState([]);
 
     useEffect(() => {

@@ -9,6 +9,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
+      <p style={{ textAlign: 'center' }}>"Create By Nguyễn Kim Khôi ( nguyenkimkhoi2709@gmail.com )"</p>
       <Route render={props => (
         <>
           <Header {...props}/>
