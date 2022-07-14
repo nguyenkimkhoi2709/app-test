@@ -13,7 +13,7 @@ export default function ImproveSkills(){
     return (
         <div className="section improve-skills">
             <div className="col img">
-                <img style={{ width: '348px', height: '320px' }} src={pro1} alt="" />
+                <img style={{ height: '320px' }} src={pro1} alt="" />
             </div>
             <div className="col typography">
                 <h1 className="title">Improve Your Culinary Skills</h1>
