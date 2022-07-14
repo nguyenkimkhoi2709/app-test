@@ -1,23 +1,29 @@
-import './App.scss';
-import 'swiper/swiper.min.css';
-import './assets/boxicons-2.1.0/boxicons-2.1.0/css/boxicons.min.css'
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import Routes from './config/Routes';
-import { BrowserRouter, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Route, Routes
+} from "react-router-dom";
+
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollTotop";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Route render={props => (
-        <>
-          <Header {...props}/>
-          <Routes />
-          <Footer />
-        </>
-      )} />
-    </BrowserRouter>
-  );
+    <Router>
+      <ScrollToTop />
+      <Navbar />
+      <div className="container main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/setting" element={<Settings />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
+  )
 }
 
 export default App;
